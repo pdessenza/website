@@ -8,15 +8,15 @@
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
   :root{
-    --bg: #0B0906;
-    --bg-elevated: #16130D;
-    --bg-elevated-2: #1D1811;
-    --gold: #C6A15B;
-    --gold-bright: #E8C87A;
-    --gold-dim: #8A7343;
-    --ink: #F2EBDC;
-    --ink-muted: #9C917C;
-    --line: #322A1D;
+    --bg: #150C1A;
+    --bg-elevated: #1F1327;
+    --bg-elevated-2: #291A33;
+    --gold: #B08FD1;
+    --gold-bright: #C7ACE0;
+    --gold-dim: #7A5F99;
+    --ink: #EDE6F2;
+    --ink-muted: #9C8FA8;
+    --line: #33223D;
     --maxw: 1160px;
   }
 
@@ -26,7 +26,7 @@
 
   body{
     background:
-      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(198,161,91,0.08), transparent 60%),
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(176,143,209,0.08), transparent 60%),
       var(--bg);
     color:var(--ink);
     font-family:'Inter', sans-serif;
@@ -73,7 +73,7 @@
     top:0; left:0; right:0;
     z-index:100;
     backdrop-filter: blur(10px);
-    background:rgba(11,9,6,0.72);
+    background:rgba(21,12,26,0.72);
     border-bottom:1px solid var(--line);
   }
   .nav{
@@ -116,11 +116,11 @@
     transition:all .25s ease;
     white-space:nowrap;
   }
-  .btn:hover{ border-color:var(--gold-bright); background:rgba(198,161,91,0.08); }
+  .btn:hover{ border-color:var(--gold-bright); background:rgba(176,143,209,0.08); }
   .btn-solid{
     background:var(--gold);
     border-color:var(--gold);
-    color:#17130B;
+    color:#241130;
     font-weight:600;
   }
   .btn-solid:hover{ background:var(--gold-bright); border-color:var(--gold-bright); }
@@ -222,7 +222,7 @@
   .story{
     border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);
-    background:linear-gradient(180deg, rgba(198,161,91,0.03), transparent);
+    background:linear-gradient(180deg, rgba(176,143,209,0.03), transparent);
   }
   .story-grid{
     display:grid;
@@ -277,7 +277,7 @@
   }
   .filter-btn:hover{ color:var(--ink); border-color:var(--gold-dim); }
   .filter-btn.active{
-    color:#17130B;
+    color:#241130;
     background:var(--gold);
     border-color:var(--gold);
   }
@@ -383,7 +383,7 @@
     border-radius:8px;
     transition:all .2s ease;
   }
-  .card-cta:hover{ background:var(--gold); color:#17130B; border-color:var(--gold); }
+  .card-cta:hover{ background:var(--gold); color:#241130; border-color:var(--gold); }
 
   /* ---------- HOW IT WORKS ---------- */
   .how{ background:var(--bg-elevated); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
@@ -473,7 +473,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    box-shadow:0 10px 30px rgba(198,161,91,0.35);
+    box-shadow:0 10px 30px rgba(176,143,209,0.35);
     transition:transform .2s ease;
   }
   .wa-float:hover{ transform:scale(1.07); }
@@ -550,13 +550,13 @@
     <div class="hero-art">
       <div class="mist" id="mist"></div>
       <svg class="bottle-hero" viewBox="0 0 200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="70" y="18" width="60" height="34" rx="6" stroke="#C6A15B" stroke-width="1.5"/>
-        <rect x="88" y="4" width="24" height="18" rx="3" stroke="#E8C87A" stroke-width="1.5"/>
-        <path d="M70 52 L58 84 L58 300 Q58 320 78 320 L122 320 Q142 320 142 300 L142 84 L130 52 Z" stroke="#C6A15B" stroke-width="1.5"/>
-        <line x1="58" y1="120" x2="142" y2="120" stroke="#3A3123" stroke-width="1"/>
-        <rect x="72" y="150" width="56" height="90" rx="2" stroke="#8A7343" stroke-width="1"/>
-        <text x="100" y="185" text-anchor="middle" font-family="Fraunces, serif" font-size="10" fill="#C6A15B" letter-spacing="1">PROFUMO</text>
-        <text x="100" y="200" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" fill="#8A7343" letter-spacing="2">EAU DE PARFUM</text>
+        <rect x="70" y="18" width="60" height="34" rx="6" stroke="#B08FD1" stroke-width="1.5"/>
+        <rect x="88" y="4" width="24" height="18" rx="3" stroke="#C7ACE0" stroke-width="1.5"/>
+        <path d="M70 52 L58 84 L58 300 Q58 320 78 320 L122 320 Q142 320 142 300 L142 84 L130 52 Z" stroke="#B08FD1" stroke-width="1.5"/>
+        <line x1="58" y1="120" x2="142" y2="120" stroke="#3D2A4A" stroke-width="1"/>
+        <rect x="72" y="150" width="56" height="90" rx="2" stroke="#7A5F99" stroke-width="1"/>
+        <text x="100" y="185" text-anchor="middle" font-family="Fraunces, serif" font-size="10" fill="#B08FD1" letter-spacing="1">PROFUMO</text>
+        <text x="100" y="200" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" fill="#7A5F99" letter-spacing="2">EAU DE PARFUM</text>
       </svg>
     </div>
   </div>
@@ -596,7 +596,7 @@
       <!-- Card 1 -->
       <article class="card" data-reveal data-category="nicho">
         <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="26" y="6" width="28" height="16" rx="3" stroke="#C6A15B" stroke-width="1.3"/><path d="M26 22 L18 42 L18 116 Q18 124 28 124 L52 124 Q62 124 62 116 L62 42 L54 22 Z" stroke="#C6A15B" stroke-width="1.3"/><rect x="24" y="58" width="32" height="38" rx="1.5" stroke="#8A7343" stroke-width="1"/></svg>
+          <svg viewBox="0 0 80 130" fill="none"><rect x="26" y="6" width="28" height="16" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M26 22 L18 42 L18 116 Q18 124 28 124 L52 124 Q62 124 62 116 L62 42 L54 22 Z" stroke="#B08FD1" stroke-width="1.3"/><rect x="24" y="58" width="32" height="38" rx="1.5" stroke="#7A5F99" stroke-width="1"/></svg>
         </div>
         <span class="card-brand">Tom Ford</span>
         <h3 class="card-name">Oud Wood</h3>
@@ -615,7 +615,7 @@
       <!-- Card 2 -->
       <article class="card" data-reveal data-category="nicho decant">
         <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="30" y="10" width="20" height="12" rx="2" stroke="#C6A15B" stroke-width="1.3"/><rect x="22" y="22" width="36" height="70" rx="4" stroke="#C6A15B" stroke-width="1.3"/><line x1="22" y1="46" x2="58" y2="46" stroke="#3A3123"/></svg>
+          <svg viewBox="0 0 80 130" fill="none"><rect x="30" y="10" width="20" height="12" rx="2" stroke="#B08FD1" stroke-width="1.3"/><rect x="22" y="22" width="36" height="70" rx="4" stroke="#B08FD1" stroke-width="1.3"/><line x1="22" y1="46" x2="58" y2="46" stroke="#3D2A4A"/></svg>
         </div>
         <span class="card-brand">Le Labo</span>
         <h3 class="card-name">Santal 33</h3>
@@ -634,7 +634,7 @@
       <!-- Card 3 -->
       <article class="card" data-reveal data-category="diseñador">
         <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="28" y="6" width="24" height="14" rx="3" stroke="#C6A15B" stroke-width="1.3"/><path d="M28 20 L20 40 L20 112 Q20 122 30 122 L50 122 Q60 122 60 112 L60 40 L52 20 Z" stroke="#C6A15B" stroke-width="1.3"/></svg>
+          <svg viewBox="0 0 80 130" fill="none"><rect x="28" y="6" width="24" height="14" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M28 20 L20 40 L20 112 Q20 122 30 122 L50 122 Q60 122 60 112 L60 40 L52 20 Z" stroke="#B08FD1" stroke-width="1.3"/></svg>
         </div>
         <span class="card-brand">Chanel</span>
         <h3 class="card-name">Bleu de Chanel EDP</h3>
@@ -653,7 +653,7 @@
       <!-- Card 4 -->
       <article class="card" data-reveal data-category="nicho">
         <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="27" y="8" width="26" height="15" rx="3" stroke="#C6A15B" stroke-width="1.3"/><path d="M27 23 L19 44 L19 118 Q19 126 29 126 L51 126 Q61 126 61 118 L61 44 L53 23 Z" stroke="#C6A15B" stroke-width="1.3"/><rect x="25" y="60" width="30" height="30" rx="1.5" stroke="#8A7343" stroke-width="1"/></svg>
+          <svg viewBox="0 0 80 130" fill="none"><rect x="27" y="8" width="26" height="15" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M27 23 L19 44 L19 118 Q19 126 29 126 L51 126 Q61 126 61 118 L61 44 L53 23 Z" stroke="#B08FD1" stroke-width="1.3"/><rect x="25" y="60" width="30" height="30" rx="1.5" stroke="#7A5F99" stroke-width="1"/></svg>
         </div>
         <span class="card-brand">Creed</span>
         <h3 class="card-name">Aventus</h3>
@@ -672,7 +672,7 @@
       <!-- Card 5 -->
       <article class="card" data-reveal data-category="diseñador">
         <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="29" y="6" width="22" height="13" rx="3" stroke="#C6A15B" stroke-width="1.3"/><path d="M29 19 L21 38 L21 110 Q21 120 31 120 L49 120 Q59 120 59 110 L59 38 L51 19 Z" stroke="#C6A15B" stroke-width="1.3"/></svg>
+          <svg viewBox="0 0 80 130" fill="none"><rect x="29" y="6" width="22" height="13" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M29 19 L21 38 L21 110 Q21 120 31 120 L49 120 Q59 120 59 110 L59 38 L51 19 Z" stroke="#B08FD1" stroke-width="1.3"/></svg>
         </div>
         <span class="card-brand">Yves Saint Laurent</span>
         <h3 class="card-name">La Nuit de L'Homme</h3>
@@ -691,7 +691,7 @@
       <!-- Card 6 -->
       <article class="card" data-reveal data-category="nicho decant">
         <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="31" y="10" width="18" height="11" rx="2" stroke="#C6A15B" stroke-width="1.3"/><rect x="23" y="21" width="34" height="66" rx="4" stroke="#C6A15B" stroke-width="1.3"/><line x1="23" y1="44" x2="57" y2="44" stroke="#3A3123"/></svg>
+          <svg viewBox="0 0 80 130" fill="none"><rect x="31" y="10" width="18" height="11" rx="2" stroke="#B08FD1" stroke-width="1.3"/><rect x="23" y="21" width="34" height="66" rx="4" stroke="#B08FD1" stroke-width="1.3"/><line x1="23" y1="44" x2="57" y2="44" stroke="#3D2A4A"/></svg>
         </div>
         <span class="card-brand">Xerjoff</span>
         <h3 class="card-name">Naxos</h3>
@@ -802,7 +802,7 @@
 </footer>
 
 <a class="wa-float" href="https://wa.me/56964134084" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 32 32" fill="#17130B"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.6.8 5 2.1 7.1L3 29l6.5-2.3c2 1.1 4.2 1.7 6.5 1.7 7 0 12.7-5.6 12.7-12.6C28.7 8.6 23 3 16 3zm0 23c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.4 1.3-3.9-.3-.4c-1.2-1.8-1.8-3.9-1.8-6.1C5 9.9 9.9 5 16 5s11 4.9 11 10.9S22.1 26.9 16 26.9zm6-8.2c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+  <svg viewBox="0 0 32 32" fill="#241130"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.6.8 5 2.1 7.1L3 29l6.5-2.3c2 1.1 4.2 1.7 6.5 1.7 7 0 12.7-5.6 12.7-12.6C28.7 8.6 23 3 16 3zm0 23c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.4 1.3-3.9-.3-.4c-1.2-1.8-1.8-3.9-1.8-6.1C5 9.9 9.9 5 16 5s11 4.9 11 10.9S22.1 26.9 16 26.9zm6-8.2c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
 </a>
 
 <script>
@@ -857,10 +857,10 @@
     navLinks.style.top = '64px';
     navLinks.style.left = '0';
     navLinks.style.right = '0';
-    navLinks.style.background = '#0B0906';
+    navLinks.style.background = '#150C1A';
     navLinks.style.padding = '20px 28px';
     navLinks.style.gap = '16px';
-    navLinks.style.borderBottom = '1px solid #322A1D';
+    navLinks.style.borderBottom = '1px solid #33223D';
   });
 </script>
 
