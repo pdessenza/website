@@ -1,885 +1,328 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profumo d'Essenza — Fragancias de diseñador y nicho</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profumo d'Essenza — Fragancias de diseñador y nicho</title>
 
-  :root{
-    --bg: #150C1A;
-    --bg-elevated: #1F1327;
-    --bg-elevated-2: #291A33;
-    --gold: #B08FD1;
-    --gold-bright: #C7ACE0;
-    --gold-dim: #7A5F99;
-    --ink: #EDE6F2;
-    --ink-muted: #9C8FA8;
-    --line: #33223D;
-    --maxw: 1160px;
-  }
+    <link rel="stylesheet" href="css/style.css">
 
-  *{box-sizing:border-box; margin:0; padding:0;}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7K84BCZ8L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  html{scroll-behavior:smooth;}
+      gtag('config', 'G-G7K84BCZ8L');
+    </script>
 
-  body{
-    background:
-      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(176,143,209,0.08), transparent 60%),
-      var(--bg);
-    color:var(--ink);
-    font-family:'Inter', sans-serif;
-    font-weight:400;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
+  </head>
 
-  a{color:inherit; text-decoration:none;}
-  ul{list-style:none;}
-  img,svg{display:block; max-width:100%;}
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="#" class="brand">PROFUMO <span>d'essenza</span></a>
+        <ul class="nav-links">
+          <li><a href="#coleccion">Colección</a></li>
+          <li><a href="#historia">Mi historia</a></li>
+          <li><a href="#como-comprar">Cómo comprar</a></li>
+        </ul>
+        <a class="btn btn-solid" href="https://wa.me/56964134084" target="_blank" rel="noopener">Escríbeme</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      </nav>
+    </header>
 
-  ::selection{ background:var(--gold-dim); color:var(--bg); }
-
-  :focus-visible{
-    outline: 2px solid var(--gold-bright);
-    outline-offset: 3px;
-  }
-
-  .wrap{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:0 28px;
-  }
-
-  .eyebrow{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.18em;
-    text-transform:uppercase;
-    color:var(--gold);
-  }
-
-  h1,h2,h3{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    letter-spacing:-0.01em;
-    color:var(--ink);
-  }
-
-  /* ---------- HEADER ---------- */
-  header{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index:100;
-    backdrop-filter: blur(10px);
-    background:rgba(21,12,26,0.72);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 28px;
-    max-width:var(--maxw);
-    margin:0 auto;
-  }
-  .brand{
-    font-family:'Fraunces', serif;
-    font-size:20px;
-    letter-spacing:0.14em;
-    font-weight:600;
-    color:var(--gold-bright);
-  }
-  .brand span{ color:var(--ink-muted); font-weight:300; letter-spacing:0.05em; }
-
-  .nav-links{
-    display:flex;
-    gap:32px;
-    font-size:14px;
-    color:var(--ink-muted);
-  }
-  .nav-links a:hover{ color:var(--gold-bright); }
-
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    font-family:'Inter', sans-serif;
-    font-size:13px;
-    font-weight:500;
-    letter-spacing:0.02em;
-    padding:10px 20px;
-    border-radius:999px;
-    border:1px solid var(--gold-dim);
-    color:var(--gold-bright);
-    transition:all .25s ease;
-    white-space:nowrap;
-  }
-  .btn:hover{ border-color:var(--gold-bright); background:rgba(176,143,209,0.08); }
-  .btn-solid{
-    background:var(--gold);
-    border-color:var(--gold);
-    color:#241130;
-    font-weight:600;
-  }
-  .btn-solid:hover{ background:var(--gold-bright); border-color:var(--gold-bright); }
-
-  .nav-toggle{ display:none; background:none; border:none; color:var(--ink); font-size:22px; cursor:pointer; }
-
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;
-    min-height:92vh;
-    display:flex;
-    align-items:center;
-    padding-top:90px;
-    overflow:hidden;
-  }
-  .hero-inner{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:0 28px;
-    display:grid;
-    grid-template-columns:1.1fr 0.9fr;
-    gap:40px;
-    align-items:center;
-    width:100%;
-  }
-  .hero h1{
-    font-size:clamp(40px, 6vw, 72px);
-    line-height:1.04;
-    margin:18px 0 22px;
-  }
-  .hero h1 em{
-    font-style:italic;
-    font-weight:300;
-    color:var(--gold-bright);
-  }
-  .hero p{
-    color:var(--ink-muted);
-    font-size:17px;
-    max-width:480px;
-    margin-bottom:32px;
-  }
-  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; }
-
-  .hero-stats{
-    display:flex;
-    gap:36px;
-    margin-top:52px;
-    padding-top:28px;
-    border-top:1px solid var(--line);
-  }
-  .stat-num{
-    font-family:'Fraunces', serif;
-    font-size:28px;
-    color:var(--gold-bright);
-  }
-  .stat-label{
-    font-size:12px;
-    color:var(--ink-muted);
-    margin-top:2px;
-  }
-
-  .hero-art{
-    position:relative;
-    height:100%;
-    min-height:420px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .mist{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
-  .mist span{
-    position:absolute;
-    width:3px; height:3px;
-    border-radius:50%;
-    background:var(--gold-bright);
-    opacity:0;
-    animation:drift 9s ease-in infinite;
-  }
-  @keyframes drift{
-    0%{ opacity:0; transform:translateY(20px) translateX(0); }
-    15%{ opacity:.55; }
-    85%{ opacity:.25; }
-    100%{ opacity:0; transform:translateY(-220px) translateX(var(--dx,20px)); }
-  }
-
-  .bottle-hero{ width:min(280px, 70%); filter:drop-shadow(0 30px 60px rgba(0,0,0,0.5)); }
-
-  /* ---------- SECTIONS ---------- */
-  section{ padding:110px 0; }
-  .section-head{
-    max-width:640px;
-    margin:0 auto 56px;
-    text-align:center;
-  }
-  .section-head h2{ font-size:clamp(28px,4vw,42px); margin-top:14px; }
-  .section-head p{ color:var(--ink-muted); margin-top:14px; font-size:16px; }
-
-  /* ---------- STORY ---------- */
-  .story{
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-    background:linear-gradient(180deg, rgba(176,143,209,0.03), transparent);
-  }
-  .story-grid{
-    display:grid;
-    grid-template-columns:0.8fr 1.2fr;
-    gap:60px;
-    align-items:center;
-  }
-  .story blockquote{
-    font-family:'Fraunces', serif;
-    font-size:clamp(22px,2.6vw,30px);
-    font-weight:400;
-    font-style:italic;
-    line-height:1.4;
-    color:var(--ink);
-    border-left:2px solid var(--gold);
-    padding-left:28px;
-  }
-  .story-details{ display:flex; flex-direction:column; gap:22px; }
-  .story-details p{ color:var(--ink-muted); font-size:15.5px; }
-  .badge-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
-  .badge{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11.5px;
-    letter-spacing:0.04em;
-    color:var(--gold);
-    border:1px solid var(--line);
-    padding:7px 12px;
-    border-radius:6px;
-    background:var(--bg-elevated);
-  }
-
-  /* ---------- FILTERS ---------- */
-  .filters{
-    display:flex;
-    gap:10px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-bottom:48px;
-  }
-  .filter-btn{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    padding:9px 18px;
-    border-radius:999px;
-    border:1px solid var(--line);
-    color:var(--ink-muted);
-    background:transparent;
-    cursor:pointer;
-    transition:all .2s ease;
-  }
-  .filter-btn:hover{ color:var(--ink); border-color:var(--gold-dim); }
-  .filter-btn.active{
-    color:#241130;
-    background:var(--gold);
-    border-color:var(--gold);
-  }
-
-  /* ---------- CATALOG ---------- */
-  .catalog-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:24px;
-  }
-  .card{
-    background:var(--bg-elevated);
-    border:1px solid var(--line);
-    border-radius:14px;
-    padding:26px;
-    display:flex;
-    flex-direction:column;
-    opacity:0;
-    transform:translateY(18px);
-    transition:opacity .6s ease, transform .6s ease, border-color .3s ease;
-  }
-  .card.is-visible{ opacity:1; transform:translateY(0); }
-  .card:hover{ border-color:var(--gold-dim); }
-  .card.hidden{ display:none; }
-
-  .card-top{
-    display:flex;
-    justify-content:center;
-    padding:18px 0 22px;
-  }
-  .card-top svg{ width:76px; height:120px; }
-
-  .card-brand{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--gold);
-  }
-  .card-name{
-    font-family:'Fraunces', serif;
-    font-size:22px;
-    margin:6px 0 10px;
-  }
-  .card-meta{
-    font-size:13px;
-    color:var(--ink-muted);
-    margin-bottom:18px;
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-  }
-  .card-meta span{ position:relative; }
-  .card-meta span:not(:last-child)::after{
-    content:'·';
-    margin-left:8px;
-    color:var(--line);
-  }
-
-  .pyramid{
-    display:flex;
-    flex-direction:column;
-    gap:7px;
-    margin-bottom:20px;
-    padding:16px;
-    background:var(--bg);
-    border-radius:10px;
-    border:1px solid var(--line);
-  }
-  .pyr-row{ display:flex; align-items:baseline; gap:10px; }
-  .pyr-tag{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:9.5px;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    color:var(--gold-dim);
-    width:58px;
-    flex-shrink:0;
-  }
-  .pyr-notes{ font-size:12.5px; color:var(--ink-muted); }
-
-  .card-footer{
-    margin-top:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding-top:18px;
-    border-top:1px solid var(--line);
-  }
-  .price{
-    font-family:'Fraunces', serif;
-    font-size:19px;
-    color:var(--gold-bright);
-  }
-  .price-label{ font-size:10px; color:var(--ink-muted); display:block; font-family:'Inter'; letter-spacing:.02em;}
-
-  .card-cta{
-    font-size:12.5px;
-    font-weight:500;
-    color:var(--gold-bright);
-    border:1px solid var(--gold-dim);
-    padding:8px 14px;
-    border-radius:8px;
-    transition:all .2s ease;
-  }
-  .card-cta:hover{ background:var(--gold); color:#241130; border-color:var(--gold); }
-
-  /* ---------- HOW IT WORKS ---------- */
-  .how{ background:var(--bg-elevated); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  .steps{
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    gap:0;
-    counter-reset:step;
-  }
-  .step{
-    padding:0 24px;
-    position:relative;
-  }
-  .step:not(:last-child){ border-right:1px solid var(--line); }
-  .step-num{
-    font-family:'Fraunces', serif;
-    font-size:15px;
-    color:var(--gold);
-    border:1px solid var(--gold-dim);
-    width:34px; height:34px;
-    border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    margin-bottom:18px;
-  }
-  .step h3{ font-size:17px; margin-bottom:8px; font-weight:500;}
-  .step p{ font-size:13.5px; color:var(--ink-muted); }
-
-  /* ---------- TRUST ---------- */
-  .trust-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:24px;
-  }
-  .trust-card{ text-align:center; padding:8px; }
-  .trust-icon{
-    width:44px; height:44px;
-    margin:0 auto 18px;
-    color:var(--gold);
-  }
-  .trust-card h3{ font-size:16px; margin-bottom:8px; font-weight:500; }
-  .trust-card p{ font-size:13.5px; color:var(--ink-muted); }
-
-  /* ---------- FOOTER ---------- */
-  footer{
-    border-top:1px solid var(--line);
-    padding:56px 0 32px;
-  }
-  .footer-grid{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    flex-wrap:wrap;
-    gap:32px;
-    padding-bottom:32px;
-  }
-  .footer-brand p{ color:var(--ink-muted); font-size:13.5px; margin-top:10px; max-width:280px; }
-  .footer-links{ display:flex; gap:56px; flex-wrap:wrap; }
-  .footer-col h4{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--gold);
-    margin-bottom:14px;
-  }
-  .footer-col a, .footer-col p{ display:block; color:var(--ink-muted); font-size:13.5px; margin-bottom:9px; }
-  .footer-col a:hover{ color:var(--gold-bright); }
-  .footer-bottom{
-    border-top:1px solid var(--line);
-    padding-top:24px;
-    font-size:12px;
-    color:var(--ink-muted);
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-
-  /* ---------- WHATSAPP FLOAT ---------- */
-  .wa-float{
-    position:fixed;
-    bottom:24px; right:24px;
-    z-index:90;
-    width:56px; height:56px;
-    border-radius:50%;
-    background:var(--gold);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 10px 30px rgba(176,143,209,0.35);
-    transition:transform .2s ease;
-  }
-  .wa-float:hover{ transform:scale(1.07); }
-  .wa-float svg{ width:26px; height:26px; }
-
-  /* ---------- RESPONSIVE ---------- */
-  @media (max-width: 880px){
-    .nav-links{ display:none; }
-    .nav-toggle{ display:block; }
-    .hero-inner{ grid-template-columns:1fr; text-align:center; }
-    .hero p{ margin-left:auto; margin-right:auto; }
-    .hero-ctas{ justify-content:center; }
-    .hero-stats{ justify-content:center; }
-    .hero-art{ order:-1; min-height:260px; }
-    .story-grid{ grid-template-columns:1fr; }
-    .story blockquote{ border-left:none; border-top:2px solid var(--gold); padding-left:0; padding-top:20px; }
-    .catalog-grid{ grid-template-columns:repeat(2, 1fr); }
-    .steps{ grid-template-columns:repeat(2, 1fr); gap:32px 0; }
-    .step:nth-child(2){ border-right:none; }
-    .step{ border-right:none !important; }
-    .trust-grid{ grid-template-columns:1fr; }
-  }
-  @media (max-width: 560px){
-    .catalog-grid{ grid-template-columns:1fr; }
-    .steps{ grid-template-columns:1fr; }
-    .footer-grid{ flex-direction:column; }
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
-  }
-</style>
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7K84BCZ8L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G7K84BCZ8L');
-</script>
-
-<body>
-
-<header>
-  <nav class="nav">
-    <a href="#" class="brand">PROFUMO <span>d'essenza</span></a>
-    <ul class="nav-links">
-      <li><a href="#coleccion">Colección</a></li>
-      <li><a href="#historia">Mi historia</a></li>
-      <li><a href="#como-comprar">Cómo comprar</a></li>
-    </ul>
-    <a class="btn btn-solid" href="https://wa.me/56964134084" target="_blank" rel="noopener">Escríbeme</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-inner">
-    <div>
-      <span class="eyebrow">Colección privada · Santiago, Chile</span>
-      <h1>Cada frasco tiene<br><em>una historia</em> detrás.</h1>
-      <p>Más de tres años buscando, probando y coleccionando fragancias de diseñador y nicho. Hoy comparto parte de mi colección contigo — piezas originales, cuidadas y con autenticidad garantizada.</p>
-      <div class="hero-ctas">
-        <a href="#coleccion" class="btn btn-solid">Ver la colección</a>
-        <a href="#como-comprar" class="btn">Cómo comprar</a>
-      </div>
-      <div class="hero-stats">
+    <section class="hero">
+      <div class="hero-inner">
         <div>
-          <div class="stat-num">3+</div>
-          <div class="stat-label">años coleccionando</div>
+          <span class="eyebrow">Colección privada · Santiago, Chile</span>
+          <h1>Cada frasco tiene<br><em>una historia</em> detrás.</h1>
+          <p>Más de tres años buscando, probando y coleccionando fragancias de diseñador y nicho. Hoy comparto parte de mi colección contigo — piezas originales, cuidadas y con autenticidad garantizada.</p>
+          <div class="hero-ctas">
+            <a href="#coleccion" class="btn btn-solid">Ver la colección</a>
+            <a href="#como-comprar" class="btn">Cómo comprar</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num">3+</div>
+              <div class="stat-label">años coleccionando</div>
+            </div>
+            <div>
+              <div class="stat-num">30+</div>
+              <div class="stat-label">perfumes diferentes</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">autenticidad verificada</div>
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="stat-num">30+</div>
-          <div class="stat-label">perfumes diferentes</div>
-        </div>
-        <div>
-          <div class="stat-num">100%</div>
-          <div class="stat-label">autenticidad verificada</div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-art">
-      <div class="mist" id="mist"></div>
-      <svg class="bottle-hero" viewBox="0 0 200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="70" y="18" width="60" height="34" rx="6" stroke="#B08FD1" stroke-width="1.5"></rect>
-        <rect x="88" y="4" width="24" height="18" rx="3" stroke="#C7ACE0" stroke-width="1.5"></rect>
-        <path d="M70 52 L58 84 L58 300 Q58 320 78 320 L122 320 Q142 320 142 300 L142 84 L130 52 Z" stroke="#B08FD1" stroke-width="1.5"></path>
-        <line x1="58" y1="120" x2="142" y2="120" stroke="#3D2A4A" stroke-width="1"></line>
-        <rect x="67" y="150" width="66" height="90" rx="2" stroke="#7A5F99" stroke-width="1"></rect>
-        <text x="100" y="185" text-anchor="middle" font-family="Fraunces, serif" font-size="9" fill="#B08FD1" letter-spacing="0.5">PROFUMO</text>
-        <text x="100" y="200" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="6.5" fill="#7A5F99" letter-spacing="0.5">d'essenza</text>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<section class="story" id="historia">
-  <div class="wrap story-grid">
-    <blockquote>“No vendo perfumes al azar. Vendo lo que yo mismo elegiría tener en mi repisa.”</blockquote>
-    <div class="story-details">
-      <p>Empecé a coleccionar perfumes a los 17 años, con un frasco que me regalaron y que no encontraba en ninguna tienda de Mall. Desde entonces he armado una colección entre piezas de diseñador y nicho, buscando siempre lo que tiene una historia olfativa interesante detrás.</p>
-      <p>Cada fragancia que vendo pasó por mis manos: la revisé, la probé y puedo contarte exactamente su estado. Si quieres fotos reales antes de decidir, te las envío por WhatsApp sin problema.</p>
-      <div class="badge-row">
-        <span class="badge">Fotos reales bajo pedido</span>
-        <span class="badge">Entrega en persona · Santiago</span>
-        <span class="badge">Pago por transferencia</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="coleccion">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Catálogo</span>
-      <h2>La colección, disponible ahora</h2>
-      <p>Precios en CLP. El stock se actualiza seguido — si algo ya no aparece, probablemente se vendió.</p>
-    </div>
-
-    <div class="filters">
-      <button class="filter-btn active" data-filter="todos">Todos</button>
-      <button class="filter-btn" data-filter="diseñador">Diseñador</button>
-      <button class="filter-btn" data-filter="nicho">Nicho</button>
-      <button class="filter-btn" data-filter="decant">Decants</button>
-    </div>
-
-    <div class="catalog-grid" id="catalogGrid">
-      <!-- Card 1 -->
-      <article class="card" data-reveal data-category="nicho">
-        <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="26" y="6" width="28" height="16" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M26 22 L18 42 L18 116 Q18 124 28 124 L52 124 Q62 124 62 116 L62 42 L54 22 Z" stroke="#B08FD1" stroke-width="1.3"/><rect x="24" y="58" width="32" height="38" rx="1.5" stroke="#7A5F99" stroke-width="1"/></svg>
-        </div>
-        <span class="card-brand">Tom Ford</span>
-        <h3 class="card-name">Oud Wood</h3>
-        <div class="card-meta"><span>50ml</span><span>90% lleno</span><span>Sellado</span></div>
-        <div class="pyramid">
-          <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cardamomo, notas ahumadas</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Oud, sándalo</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla, ámbar</span></div>
-        </div>
-        <div class="card-footer">
-          <div><span class="price-label">Precio</span><span class="price">$85.000</span></div>
-          <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Tom%20Ford%20Oud%20Wood" target="_blank" rel="noopener">Consultar</a>
-        </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card" data-reveal data-category="nicho decant">
-        <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="30" y="10" width="20" height="12" rx="2" stroke="#B08FD1" stroke-width="1.3"/><rect x="22" y="22" width="36" height="70" rx="4" stroke="#B08FD1" stroke-width="1.3"/><line x1="22" y1="46" x2="58" y2="46" stroke="#3D2A4A"/></svg>
-        </div>
-        <span class="card-brand">Le Labo</span>
-        <h3 class="card-name">Santal 33</h3>
-        <div class="card-meta"><span>Decant 10ml</span><span>Original</span></div>
-        <div class="pyramid">
-          <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cartamo</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Sándalo, cedro violeta</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Cuero, ámbar</span></div>
-        </div>
-        <div class="card-footer">
-          <div><span class="price-label">Precio</span><span class="price">$28.000</span></div>
-          <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20decant%20de%20Santal%2033" target="_blank" rel="noopener">Consultar</a>
-        </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card" data-reveal data-category="diseñador">
-        <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="28" y="6" width="24" height="14" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M28 20 L20 40 L20 112 Q20 122 30 122 L50 122 Q60 122 60 112 L60 40 L52 20 Z" stroke="#B08FD1" stroke-width="1.3"/></svg>
-        </div>
-        <span class="card-brand">Chanel</span>
-        <h3 class="card-name">Bleu de Chanel EDP</h3>
-        <div class="card-meta"><span>100ml</span><span>70% lleno</span></div>
-        <div class="pyramid">
-          <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Pomelo, menta</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Jengibre, nuez moscada</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Incienso, sándalo</span></div>
-        </div>
-        <div class="card-footer">
-          <div><span class="price-label">Precio</span><span class="price">$65.000</span></div>
-          <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Bleu%20de%20Chanel" target="_blank" rel="noopener">Consultar</a>
-        </div>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="card" data-reveal data-category="nicho">
-        <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="27" y="8" width="26" height="15" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M27 23 L19 44 L19 118 Q19 126 29 126 L51 126 Q61 126 61 118 L61 44 L53 23 Z" stroke="#B08FD1" stroke-width="1.3"/><rect x="25" y="60" width="30" height="30" rx="1.5" stroke="#7A5F99" stroke-width="1"/></svg>
-        </div>
-        <span class="card-brand">Creed</span>
-        <h3 class="card-name">Aventus</h3>
-        <div class="card-meta"><span>50ml</span><span>Sellado</span></div>
-        <div class="pyramid">
-          <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Piña, bergamota</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Abedul, pachulí</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Almizcle, roble</span></div>
-        </div>
-        <div class="card-footer">
-          <div><span class="price-label">Precio</span><span class="price">$180.000</span></div>
-          <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Creed%20Aventus" target="_blank" rel="noopener">Consultar</a>
-        </div>
-      </article>
-
-      <!-- Card 5 -->
-      <article class="card" data-reveal data-category="diseñador">
-        <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="29" y="6" width="22" height="13" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M29 19 L21 38 L21 110 Q21 120 31 120 L49 120 Q59 120 59 110 L59 38 L51 19 Z" stroke="#B08FD1" stroke-width="1.3"/></svg>
-        </div>
-        <span class="card-brand">Yves Saint Laurent</span>
-        <h3 class="card-name">La Nuit de L'Homme</h3>
-        <div class="card-meta"><span>100ml</span><span>60% lleno</span></div>
-        <div class="pyramid">
-          <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cardamomo, bergamota</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Lavanda, salvia</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Cedro, haba tonka</span></div>
-        </div>
-        <div class="card-footer">
-          <div><span class="price-label">Precio</span><span class="price">$42.000</span></div>
-          <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20La%20Nuit%20de%20L%27Homme" target="_blank" rel="noopener">Consultar</a>
-        </div>
-      </article>
-
-      <!-- Card 6 -->
-      <article class="card" data-reveal data-category="nicho decant">
-        <div class="card-top">
-          <svg viewBox="0 0 80 130" fill="none"><rect x="31" y="10" width="18" height="11" rx="2" stroke="#B08FD1" stroke-width="1.3"/><rect x="23" y="21" width="34" height="66" rx="4" stroke="#B08FD1" stroke-width="1.3"/><line x1="23" y1="44" x2="57" y2="44" stroke="#3D2A4A"/></svg>
-        </div>
-        <span class="card-brand">Xerjoff</span>
-        <h3 class="card-name">Naxos</h3>
-        <div class="card-meta"><span>Decant 5ml</span><span>Original</span></div>
-        <div class="pyramid">
-          <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Bergamota, lavanda</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Miel, tabaco</span></div>
-          <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla, haba tonka</span></div>
-        </div>
-        <div class="card-footer">
-          <div><span class="price-label">Precio</span><span class="price">$22.000</span></div>
-          <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20decant%20de%20Naxos" target="_blank" rel="noopener">Consultar</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="how" id="como-comprar">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Proceso</span>
-      <h2>Cómo comprar</h2>
-      <p>Simple, directo y sin sorpresas. Así funciona cada compra.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Eliges tu fragancia</h3>
-        <p>Revisa el catálogo y anota el nombre del perfume que te interesa.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Me escribes por WhatsApp</h3>
-        <p>Confirmamos disponibilidad y te envío fotos reales si las quieres ver.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Coordinamos el pago</h3>
-        <p>Pagas por transferencia bancaria una vez que estés seguro/a de tu compra.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h3>Entrega en persona</h3>
-        <p>Coordinamos un punto de encuentro en Santiago para hacer la entrega.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">5</div>
-        <h3>Envíos a todo Chile</h3>
-        <p>O podemos coordinar el corrier y te envío el producto a domicilio.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Confianza</span>
-      <h2>Por qué comprar conmigo</h2>
-    </div>
-    <div class="trust-grid">
-      <div class="trust-card">
-        <svg class="trust-icon" viewBox="0 0 48 48" fill="none"><path d="M24 4 L40 11 V23 C40 33 33 40 24 44 C15 40 8 33 8 23 V11 Z" stroke="currentColor" stroke-width="1.5"/><path d="M17 24 L22 29 L32 18" stroke="currentColor" stroke-width="1.5"/></svg>
-        <h3>Autenticidad garantizada</h3>
-        <p>Solo vendo lo que yo mismo compro y uso. Nada de réplicas ni imitaciones.</p>
-      </div>
-      <div class="trust-card">
-        <svg class="trust-icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="26" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 18 L16 14 M40 18 L32 14" stroke="currentColor" stroke-width="1.5"/></svg>
-        <h3>Fotos reales del estado</h3>
-        <p>Te muestro el frasco tal cual está, incluyendo nivel de contenido y empaque.</p>
-      </div>
-      <div class="trust-card">
-        <svg class="trust-icon" viewBox="0 0 48 48" fill="none"><path d="M24 4 C14 4 6 12 6 24 C6 34 14 42 24 44 C34 42 42 34 42 24 C42 12 34 4 24 4 Z" stroke="currentColor" stroke-width="1.5"/><path d="M24 14 V24 L30 28" stroke="currentColor" stroke-width="1.5"/></svg>
-        <h3>Respuesta rápida</h3>
-        <p>Escríbeme por WhatsApp y normalmente respondo el mismo día.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="brand">PROFUMO <span>d'essenza</span></span>
-        <p>Colección privada de fragancias de diseñador y nicho. Seleccionada y vendida por un coleccionista, en Santiago de Chile.</p>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <a href="https://wa.me/56964134084" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="https://www.instagram.com/profumodessenza/" target="_blank" rel="noopener">Instagram</a>
-        </div>
-        <div class="footer-col">
-          <h4>Sitio</h4>
-          <a href="#coleccion">Colección</a>
-          <a href="#historia">Mi historia</a>
-          <a href="#como-comprar">Cómo comprar</a>
-        </div>
-        <div class="footer-col">
-          <h4>Ubicación</h4>
-          <p>Santiago, Chile</p>
-          <p>Entrega presecial</p>
-          <p>Envíos a todo Chile</p>
+        <div class="hero-art">
+          <div class="mist" id="mist"></div>
+          <svg class="bottle-hero" viewBox="0 0 200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="70" y="18" width="60" height="34" rx="6" stroke="#B08FD1" stroke-width="1.5"></rect>
+            <rect x="88" y="4" width="24" height="18" rx="3" stroke="#C7ACE0" stroke-width="1.5"></rect>
+            <path d="M70 52 L58 84 L58 300 Q58 320 78 320 L122 320 Q142 320 142 300 L142 84 L130 52 Z" stroke="#B08FD1" stroke-width="1.5"></path>
+            <line x1="58" y1="120" x2="142" y2="120" stroke="#3D2A4A" stroke-width="1"></line>
+            <rect x="67" y="150" width="66" height="90" rx="2" stroke="#7A5F99" stroke-width="1"></rect>
+            <text x="100" y="185" text-anchor="middle" font-family="Fraunces, serif" font-size="9" fill="#B08FD1" letter-spacing="0.5">PROFUMO</text>
+            <text x="100" y="200" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="6.5" fill="#7A5F99" letter-spacing="0.5">d'essenza</text>
+          </svg>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Profumo d'Essenza. Colección personal, no afiliado a ninguna casa de perfumería.</span>
-      <span>Hecho con cariño por un coleccionista</span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<a class="wa-float" href="https://wa.me/56964134084" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 32 32" fill="#241130"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.6.8 5 2.1 7.1L3 29l6.5-2.3c2 1.1 4.2 1.7 6.5 1.7 7 0 12.7-5.6 12.7-12.6C28.7 8.6 23 3 16 3zm0 23c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.4 1.3-3.9-.3-.4c-1.2-1.8-1.8-3.9-1.8-6.1C5 9.9 9.9 5 16 5s11 4.9 11 10.9S22.1 26.9 16 26.9zm6-8.2c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
-</a>
+    <section class="story" id="historia">
+      <div class="wrap story-grid">
+        <blockquote>“No vendo perfumes al azar. Vendo lo que yo mismo elegiría tener en mi repisa.”</blockquote>
+        <div class="story-details">
+          <p>Empecé a coleccionar perfumes a los 17 años, con un frasco que me regalaron y que no encontraba en ninguna tienda de Mall. Desde entonces he armado una colección entre piezas de diseñador y nicho, buscando siempre lo que tiene una historia olfativa interesante detrás.</p>
+          <p>Cada fragancia que vendo pasó por mis manos: la revisé, la probé y puedo contarte exactamente su estado. Si quieres fotos reales antes de decidir, te las envío por WhatsApp sin problema.</p>
+          <div class="badge-row">
+            <span class="badge">Fotos reales bajo pedido</span>
+            <span class="badge">Entrega en persona · Santiago</span>
+            <span class="badge">Pago por transferencia</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script>
-  // Mist particles
-  const mist = document.getElementById('mist');
-  for(let i=0;i<14;i++){
-    const s = document.createElement('span');
-    s.style.left = (10 + Math.random()*80) + '%';
-    s.style.bottom = (Math.random()*40) + 'px';
-    s.style.setProperty('--dx', (Math.random()*60-30)+'px');
-    s.style.animationDelay = (Math.random()*9) + 's';
-    s.style.animationDuration = (7 + Math.random()*5) + 's';
-    mist.appendChild(s);
-  }
+    <section id="coleccion">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Catálogo</span>
+          <h2>La colección, disponible ahora</h2>
+          <p>Precios en CLP. El stock se actualiza seguido — si algo ya no aparece, probablemente se vendió.</p>
+        </div>
 
-  // Scroll reveal
-  const cards = document.querySelectorAll('[data-reveal]');
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.15 });
-  cards.forEach(c=>io.observe(c));
+        <div class="filters">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="diseñador">Diseñador</button>
+          <button class="filter-btn" data-filter="nicho">Nicho</button>
+          <button class="filter-btn" data-filter="decant">Decants</button>
+        </div>
 
-  // Filters
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const allCards = document.querySelectorAll('#catalogGrid .card');
-  filterBtns.forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      filterBtns.forEach(b=>b.classList.remove('active'));
-      btn.classList.add('active');
-      const f = btn.dataset.filter;
-      allCards.forEach(card=>{
-        const cats = card.dataset.category.split(' ');
-        if(f === 'todos' || cats.includes(f)){
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    });
-  });
+        <div class="catalog-grid" id="catalogGrid">
+          <!-- Card 1 -->
+          <article class="card" data-reveal data-category="nicho">
+            <div class="card-top">
+              <svg viewBox="0 0 80 130" fill="none"><rect x="26" y="6" width="28" height="16" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M26 22 L18 42 L18 116 Q18 124 28 124 L52 124 Q62 124 62 116 L62 42 L54 22 Z" stroke="#B08FD1" stroke-width="1.3"/><rect x="24" y="58" width="32" height="38" rx="1.5" stroke="#7A5F99" stroke-width="1"/></svg>
+            </div>
+            <span class="card-brand">Tom Ford</span>
+            <h3 class="card-name">Oud Wood</h3>
+            <div class="card-meta"><span>50ml</span><span>90% lleno</span><span>Sellado</span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cardamomo, notas ahumadas</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Oud, sándalo</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla, ámbar</span></div>
+            </div>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$85.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Tom%20Ford%20Oud%20Wood" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
 
-  // Mobile nav toggle (simple: scrolls links into a stacked state)
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.querySelector('.nav-links');
-  navToggle.addEventListener('click', ()=>{
-    const open = navLinks.style.display === 'flex';
-    navLinks.style.display = open ? 'none' : 'flex';
-    navLinks.style.flexDirection = 'column';
-    navLinks.style.position = 'absolute';
-    navLinks.style.top = '64px';
-    navLinks.style.left = '0';
-    navLinks.style.right = '0';
-    navLinks.style.background = '#150C1A';
-    navLinks.style.padding = '20px 28px';
-    navLinks.style.gap = '16px';
-    navLinks.style.borderBottom = '1px solid #33223D';
-  });
-</script>
+          <!-- Card 2 -->
+          <article class="card" data-reveal data-category="nicho decant">
+            <div class="card-top">
+              <svg viewBox="0 0 80 130" fill="none"><rect x="30" y="10" width="20" height="12" rx="2" stroke="#B08FD1" stroke-width="1.3"/><rect x="22" y="22" width="36" height="70" rx="4" stroke="#B08FD1" stroke-width="1.3"/><line x1="22" y1="46" x2="58" y2="46" stroke="#3D2A4A"/></svg>
+            </div>
+            <span class="card-brand">Le Labo</span>
+            <h3 class="card-name">Santal 33</h3>
+            <div class="card-meta"><span>Decant 10ml</span><span>Original</span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cartamo</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Sándalo, cedro violeta</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Cuero, ámbar</span></div>
+            </div>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$28.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20decant%20de%20Santal%2033" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
 
-</body>
+          <!-- Card 3 -->
+          <article class="card" data-reveal data-category="diseñador">
+            <div class="card-top">
+              <svg viewBox="0 0 80 130" fill="none"><rect x="28" y="6" width="24" height="14" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M28 20 L20 40 L20 112 Q20 122 30 122 L50 122 Q60 122 60 112 L60 40 L52 20 Z" stroke="#B08FD1" stroke-width="1.3"/></svg>
+            </div>
+            <span class="card-brand">Chanel</span>
+            <h3 class="card-name">Bleu de Chanel EDP</h3>
+            <div class="card-meta"><span>100ml</span><span>70% lleno</span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Pomelo, menta</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Jengibre, nuez moscada</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Incienso, sándalo</span></div>
+            </div>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$65.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Bleu%20de%20Chanel" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" data-reveal data-category="nicho">
+            <div class="card-top">
+              <svg viewBox="0 0 80 130" fill="none"><rect x="27" y="8" width="26" height="15" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M27 23 L19 44 L19 118 Q19 126 29 126 L51 126 Q61 126 61 118 L61 44 L53 23 Z" stroke="#B08FD1" stroke-width="1.3"/><rect x="25" y="60" width="30" height="30" rx="1.5" stroke="#7A5F99" stroke-width="1"/></svg>
+            </div>
+            <span class="card-brand">Creed</span>
+            <h3 class="card-name">Aventus</h3>
+            <div class="card-meta"><span>50ml</span><span>Sellado</span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Piña, bergamota</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Abedul, pachulí</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Almizcle, roble</span></div>
+            </div>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$180.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Creed%20Aventus" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card" data-reveal data-category="diseñador">
+            <div class="card-top">
+              <svg viewBox="0 0 80 130" fill="none"><rect x="29" y="6" width="22" height="13" rx="3" stroke="#B08FD1" stroke-width="1.3"/><path d="M29 19 L21 38 L21 110 Q21 120 31 120 L49 120 Q59 120 59 110 L59 38 L51 19 Z" stroke="#B08FD1" stroke-width="1.3"/></svg>
+            </div>
+            <span class="card-brand">Yves Saint Laurent</span>
+            <h3 class="card-name">La Nuit de L'Homme</h3>
+            <div class="card-meta"><span>100ml</span><span>60% lleno</span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cardamomo, bergamota</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Lavanda, salvia</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Cedro, haba tonka</span></div>
+            </div>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$42.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20La%20Nuit%20de%20L%27Homme" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card" data-reveal data-category="nicho decant">
+            <div class="card-top">
+              <svg viewBox="0 0 80 130" fill="none"><rect x="31" y="10" width="18" height="11" rx="2" stroke="#B08FD1" stroke-width="1.3"/><rect x="23" y="21" width="34" height="66" rx="4" stroke="#B08FD1" stroke-width="1.3"/><line x1="23" y1="44" x2="57" y2="44" stroke="#3D2A4A"/></svg>
+            </div>
+            <span class="card-brand">Xerjoff</span>
+            <h3 class="card-name">Naxos</h3>
+            <div class="card-meta"><span>Decant 5ml</span><span>Original</span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Bergamota, lavanda</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Miel, tabaco</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla, haba tonka</span></div>
+            </div>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$22.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20decant%20de%20Naxos" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="como-comprar">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Proceso</span>
+          <h2>Cómo comprar</h2>
+          <p>Simple, directo y sin sorpresas. Así funciona cada compra.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Eliges tu fragancia</h3>
+            <p>Revisa el catálogo y anota el nombre del perfume que te interesa.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Me escribes por WhatsApp</h3>
+            <p>Confirmamos disponibilidad y te envío fotos reales si las quieres ver.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Coordinamos el pago</h3>
+            <p>Pagas por transferencia bancaria una vez que estés seguro/a de tu compra.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <h3>Entrega en persona</h3>
+            <p>Coordinamos un punto de encuentro en Santiago para hacer la entrega.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">5</div>
+            <h3>Envíos a todo Chile</h3>
+            <p>O podemos coordinar el corrier y te envío el producto a domicilio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Confianza</span>
+          <h2>Por qué comprar conmigo</h2>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <svg class="trust-icon" viewBox="0 0 48 48" fill="none"><path d="M24 4 L40 11 V23 C40 33 33 40 24 44 C15 40 8 33 8 23 V11 Z" stroke="currentColor" stroke-width="1.5"/><path d="M17 24 L22 29 L32 18" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>Autenticidad garantizada</h3>
+            <p>Solo vendo lo que yo mismo compro y uso. Nada de réplicas ni imitaciones.</p>
+          </div>
+          <div class="trust-card">
+            <svg class="trust-icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="26" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 18 L16 14 M40 18 L32 14" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>Fotos reales del estado</h3>
+            <p>Te muestro el frasco tal cual está, incluyendo nivel de contenido y empaque.</p>
+          </div>
+          <div class="trust-card">
+            <svg class="trust-icon" viewBox="0 0 48 48" fill="none"><path d="M24 4 C14 4 6 12 6 24 C6 34 14 42 24 44 C34 42 42 34 42 24 C42 12 34 4 24 4 Z" stroke="currentColor" stroke-width="1.5"/><path d="M24 14 V24 L30 28" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>Respuesta rápida</h3>
+            <p>Escríbeme por WhatsApp y normalmente respondo el mismo día.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="brand">PROFUMO <span>d'essenza</span></span>
+            <p>Colección privada de fragancias de diseñador y nicho. Seleccionada y vendida por un coleccionista, en Santiago de Chile.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Contacto</h4>
+              <a href="https://wa.me/56964134084" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="https://www.instagram.com/profumodessenza/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+            <div class="footer-col">
+              <h4>Sitio</h4>
+              <a href="#coleccion">Colección</a>
+              <a href="#historia">Mi historia</a>
+              <a href="#como-comprar">Cómo comprar</a>
+            </div>
+            <div class="footer-col">
+              <h4>Ubicación</h4>
+              <p>Santiago, Chile</p>
+              <p>Entrega presecial</p>
+              <p>Envíos a todo Chile</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Profumo d'Essenza. Colección personal, no afiliado a ninguna casa de perfumería.</span>
+          <span>Hecho con cariño por un coleccionista</span>
+        </div>
+      </div>
+    </footer>
+
+    <a class="wa-float" href="https://wa.me/56964134084" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+      <svg viewBox="0 0 32 32" fill="#241130"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.6.8 5 2.1 7.1L3 29l6.5-2.3c2 1.1 4.2 1.7 6.5 1.7 7 0 12.7-5.6 12.7-12.6C28.7 8.6 23 3 16 3zm0 23c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.4 1.3-3.9-.3-.4c-1.2-1.8-1.8-3.9-1.8-6.1C5 9.9 9.9 5 16 5s11 4.9 11 10.9S22.1 26.9 16 26.9zm6-8.2c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+    </a>
+
+    <script src="js/scripts.js"></script>
+
+  </body>
 </html>
