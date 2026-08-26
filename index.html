@@ -83,9 +83,26 @@
         </div>
 
         <div class="catalog-grid" id="catalogGrid">
-          <!-- Card 1 - Acqua Di Giò Profondo EDP -->
-          <article class="card" data-reveal data-category="disenador">
-            <div class="card-top"><img src="img/giorgio-armani/profondo-edp.png" alt="Acqua Di Giò Profondo EDP" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+<!--
+  Tarjetas de producto generadas desde la planilla de Google Sheets.
+  24 productos activos: P001-P021 (menos P022-P028 Ralph Lauren, aun sin nombre/imagen)
+  + P029 (Mancera, parcial) + P030-P031 (Tom Ford, completos).
+
+  PENDIENTE:
+  - Sin precio (muestran "Por confirmar"): P019, P020, P021, P029, P030, P031
+  - P029 Mancera Amore Caffe: falta tipo, año y piramide olfativa completos.
+  - P018 Bottled Absolu: falta la nota de fondo.
+
+  NO incluidos (falta nombre y/o imagen en el Sheet): P022-P028 (Ralph Lauren),
+  P032-P033 (Versace).
+
+  Como usar: reemplaza todo el contenido de tu <div id="catalogGrid"> por
+  estas tarjetas.
+-->
+
+          <!-- P001 - Acqua Di Giò Profondo -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P001">
+            <div class="card-top"><img src="img/giorgio-armani/acqua-di-gio-profondo-edp.png" alt="Acqua Di Giò Profondo" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Giorgio Armani</span>
             <h3 class="card-name">Acqua Di Giò Profondo</h3>
             <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2024</span><span><img class="card-flag" src="https://flagcdn.com/it.svg" alt="Italia" title="Italia"></span></div>
@@ -94,15 +111,15 @@
               <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Romero — lavanda</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Notas minerales — ámbar gris — almizcle — cedro — pachulí</span></div>
             </div>
-            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Alberto Morillas</p>       
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Alberto Morillas</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$10.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Acqua Di Giò Profondo EDP" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Acqua%20Di%20Gi%C3%B2%20Profondo" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-          <!-- Card 2 - Stronger With You Absolutely -->
-          <article class="card" data-reveal data-category="disenador">
+          <!-- P002 - Stronger With You Absolutely -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P002">
             <div class="card-top"><img src="img/emporio-armani/stronger-with-you-absolutely.png" alt="Stronger With You Absolutely" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Emporio Armani</span>
             <h3 class="card-name">Stronger With You Absolutely</h3>
@@ -115,49 +132,49 @@
             <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Cécile Matton</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$12.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Stronger With You Absolutely" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Stronger%20With%20You%20Absolutely" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
-        
-          <!-- Card 3 - Stronger With You Intensly -->
-          <article class="card" data-reveal data-category="disenador">
+
+          <!-- P003 - Stronger With You Intensely -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P003">
             <div class="card-top"><img src="img/emporio-armani/stronger-with-you-intensely.png" alt="Stronger With You Intensely" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Emporio Armani</span>
             <h3 class="card-name">Stronger With You Intensely</h3>
             <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2019</span><span><img class="card-flag" src="https://flagcdn.com/it.svg" alt="Italia" title="Italia"></span></div>
             <div class="pyramid">
-              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Pimienta rosa — enebreo — violeta</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Tófe — canela — lavanda — salvia</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Pimienta rosa — enebro — violeta</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Toffee — canela — lavanda — salvia</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla — haba tonka — ámbar — gamuza</span></div>
             </div>
             <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Sin información</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$10.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Stronger With You Intensely" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Stronger%20With%20You%20Intensely" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-          <!-- Card 4 - Bleu de Chanel L'Exclusif -->
-          <article class="card" data-reveal data-category="disenador">
-            <div class="card-top"><img src="img/chanel/bleu-de-chanel-lxclusif.png" alt="Bleu de Chanel L'Exclusif" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+          <!-- P004 - Bleu de Chanel L&#x27;Exclusif -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P004">
+            <div class="card-top"><img src="img/chanel/bleu-de-chanel-lexclusif.png" alt="Bleu de Chanel L&#x27;Exclusif" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Chanel</span>
-            <h3 class="card-name">Bleu de Chanel L'Exclusif</h3>
+            <h3 class="card-name">Bleu de Chanel L&#x27;Exclusif</h3>
             <div class="card-meta"><span>Extrait de Parfum</span><span>Diseñador</span><span>2025</span><span><img class="card-flag" src="https://flagcdn.com/fr.svg" alt="Francia" title="Francia"></span></div>
             <div class="pyramid">
               <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Lavanda — cáscara de limón — bergamota</span></div>
               <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Cuero — jazmín</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Sándalo — cedro de Virginia — pachulí — ámbar — resina de cistus</span></div>
             </div>
-            <span class="pyr-tag">PERFUMISTA</span><div class="card-perfumer"><span>Olivier Polge</span></div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Olivier Polge</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$18.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Bleu de Chanel L'Exclusif" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Bleu%20de%20Chanel%20L%27Exclusif" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-          <!-- Card 5 - Dior Homme Intense -->
-          <article class="card" data-reveal data-category="disenador">
-            <div class="card-top"><img src="img/dior/homme-intense-25.png" alt="Dior Homme Intense 2025" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+          <!-- P005 - Dior Homme Intense -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P005">
+            <div class="card-top"><img src="img/dior/dior-homme-intense-2025.png" alt="Dior Homme Intense" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Dior</span>
             <h3 class="card-name">Dior Homme Intense</h3>
             <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2025</span><span><img class="card-flag" src="https://flagcdn.com/fr.svg" alt="Francia" title="Francia"></span></div>
@@ -166,15 +183,15 @@
               <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Almizcle ambreta</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Cedro de Virginia</span></div>
             </div>
-            <span class="pyr-tag">PERFUMISTA</span><div class="card-perfumer"><span>François Demachy</span></div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">François Demachy</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$18.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Dior Homme Intense 2025" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Dior%20Homme%20Intense" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-          <!-- Card 6 - Xerjoff Torino 21 -->
-          <article class="card" data-reveal data-category="nicho">
+          <!-- P006 - Torino 21 -->
+          <article class="card" data-reveal data-category="nicho" data-sku="P006">
             <div class="card-top"><img src="img/xerjoff/torino-21.png" alt="Torino 21" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Xerjoff</span>
             <h3 class="card-name">Torino 21</h3>
@@ -184,15 +201,15 @@
               <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Grosella negra — romero — lavanda — jazmín</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Verbena de limón — almizcle</span></div>
             </div>
-            <span class="pyr-tag">PERFUMISTA</span><div class="card-perfumer"><span>Chris Maurice</span></div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Chris Maurice</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$25.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Torino 21" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Torino%2021" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-          <!-- Card 7 - Xerjoff Erba Gold -->
-          <article class="card" data-reveal data-category="nicho">
+          <!-- P007 - Erba Gold -->
+          <article class="card" data-reveal data-category="nicho" data-sku="P007">
             <div class="card-top"><img src="img/xerjoff/erba-gold.png" alt="Erba Gold" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Xerjoff</span>
             <h3 class="card-name">Erba Gold</h3>
@@ -202,33 +219,33 @@
               <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Melón — pera — manzana verde — canela — cardamomo guatemalteco — clavos de olor</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Almizcle blanco — vainilla de Madagascar — ámbar — notas amaderadas</span></div>
             </div>
-            <span class="pyr-tag">PERFUMISTA</span><div class="card-perfumer"><span>Sin información</span></div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Sin información</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$21.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Erba Gold" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Erba%20Gold" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-          <!-- Card 8 - Nishane Ege / Αιγαιο -->
-          <article class="card" data-reveal data-category="nicho">
+          <!-- P008 - EGE / ΑΙΓΑΙΟ -->
+          <article class="card" data-reveal data-category="nicho" data-sku="P008">
             <div class="card-top"><img src="img/nishane/ege.png" alt="EGE / ΑΙΓΑΙΟ" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Nishane</span>
             <h3 class="card-name">EGE / ΑΙΓΑΙΟ</h3>
-            <div class="card-meta"><span>Extrait de Parfum</span><span>Nicho</span><span>2020</span><span><img class="card-flag" src="https://flagcdn.com/tr.svg" alt="Turkia" title="Turkia"></span></div>
+            <div class="card-meta"><span>Extrait de Parfum</span><span>Nicho</span><span>2020</span><span><img class="card-flag" src="https://flagcdn.com/tr.svg" alt="Turquía" title="Turquía"></span></div>
             <div class="pyramid">
               <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Hojas de violeta — yuzu — anís</span></div>
               <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Albahaca — menta — cardamomo</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Regaliz — incienso de olíbano</span></div>
             </div>
-            <span class="pyr-tag">PERFUMISTA</span><div class="card-perfumer"><span>Ilias Ermenidis</span></div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Ilias Ermenidis</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$23.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de EGE / ΑΙΓΑΙΟ" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20EGE%20/%20%CE%91%CE%99%CE%93%CE%91%CE%99%CE%9F" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-         <!-- Card 9 - Lattafa Khamrah Qahwa -->
-          <article class="card" data-reveal data-category="arabe">
+          <!-- P009 - Khamrah Qahwa -->
+          <article class="card" data-reveal data-category="arabe" data-sku="P009">
             <div class="card-top"><img src="img/lattafa/khamrah-qahwa.png" alt="Khamrah Qahwa" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
             <span class="card-brand">Lattafa</span>
             <h3 class="card-name">Khamrah Qahwa</h3>
@@ -238,88 +255,282 @@
               <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Praliné — frutas confitadas — flores blancas</span></div>
               <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla — café — haba tonka — benjuí — almizcle</span></div>
             </div>
-            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Sin información</p>       
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Sin información</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$4.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola! Me interesa el decant de Lattafa Khamrah Qahwa" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Khamrah%20Qahwa" target="_blank" rel="noopener">Consultar</a>
             </div>
           </article>
 
-          <!-- Card 6 -->
-          <!--article class="card" data-reveal data-category="diseñador decant">
-            <div class="card-top">
-              <img src="img/k.png" alt="Dolce & Gabbana K EDT" style="height: 120px; margin: 0 auto; object-fit: contain;">
-            </div>
-            <span class="card-brand">Dolce & Gabbana</span>
-            <h3 class="card-name">K EDT</h3>
-            <div class="card-meta"><span> decant 5ml</span><span>Original</span></div>
+          <!-- P010 - K by Dolce &amp; Gabbana -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P010">
+            <div class="card-top"><img src="img/dolce-gabbana/k-by-dolce-gabbana-edt.png" alt="K by Dolce &amp; Gabbana" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Dolce &amp; Gabbana</span>
+            <h3 class="card-name">K by Dolce &amp; Gabbana</h3>
+            <div class="card-meta"><span>Eau de Toilette</span><span>Diseñador</span><span>2019</span><span><img class="card-flag" src="https://flagcdn.com/it.svg" alt="Italia" title="Italia"></span></div>
             <div class="pyramid">
-              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">naranja sanguina, limón siciliano</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">lavanda, geranio</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">pachulí, cedro</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Naranja sanguina — limón siciliano — cítricos — bayas de enebro</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Pimiento de Jamaica — lavanda — esclarea — geranio</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vetiver — cedro — pachulí</span></div>
             </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Daphné Bugey — Nathalie Lorson</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$6.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Dolce%20&%20Gabbana%20K%20EDT" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20K%20by%20Dolce%20%26%20Gabbana" target="_blank" rel="noopener">Consultar</a>
             </div>
-          </article-->
+          </article>
 
-          <!-- Card 7 -->
-          <!--article class="card" data-reveal data-category="diseñador decant">
-            <div class="card-top">
-              <img src="img/light_blue_ph.png" alt="Light Blue pour homme EDT" style="height: 120px; margin: 0 auto; object-fit: contain;">
-            </div>
-            <span class="card-brand">Dolce & Gabbana</span>
-            <h3 class="card-name">Light Blue pour homme EDT</h3>
-            <div class="card-meta"><span>Decant 5 ml</span><span>Eu</span></div>
+          <!-- P011 - Light Blue Pour Homme -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P011">
+            <div class="card-top"><img src="img/dolce-gabbana/light-blue-pour-homme-edt.png" alt="Light Blue Pour Homme" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Dolce &amp; Gabbana</span>
+            <h3 class="card-name">Light Blue Pour Homme</h3>
+            <div class="card-meta"><span>Eau de Toilette</span><span>Diseñador</span><span>2007</span><span><img class="card-flag" src="https://flagcdn.com/it.svg" alt="Italia" title="Italia"></span></div>
             <div class="pyramid">
-              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">limón</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">romero</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">pachulí</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Pomelo — bergamota — mandarina siciliana — enebro</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Pimienta — romero — palo de rosa de Brasil</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Almizcle — incienso — musgo de roble</span></div>
             </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Alberto Morillas</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$5.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20Light%20Blue%20pour%20homme%20EDT" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Light%20Blue%20Pour%20Homme" target="_blank" rel="noopener">Consultar</a>
             </div>
-          </article-->
+          </article>
 
-          <!-- Card 8 -->
-          <!--article class="card" data-reveal data-category="diseñador decant">
-            <div class="card-top">
-              <img src="img/capri_in_love.png" alt="Light blue pour homme capri in love" style="height: 120px; margin: 0 auto; object-fit: contain;">
-            </div>
-            <span class="card-brand">Dolce & Gabbana</span>
-            <h3 class="card-name">Light blue pour homme capri in love</h3>
-            <div class="card-meta"><span>Decant 5ml</span><span>Original</span></div>
+          <!-- P012 - Light Blue Capri in Love Pour Homme -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P012">
+            <div class="card-top"><img src="img/dolce-gabbana/light-blue-capri-in-love-pour-homme.png" alt="Light Blue Capri in Love Pour Homme" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Dolce &amp; Gabbana</span>
+            <h3 class="card-name">Light Blue Capri in Love Pour Homme</h3>
+            <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2025</span><span><img class="card-flag" src="https://flagcdn.com/it.svg" alt="Italia" title="Italia"></span></div>
             <div class="pyramid">
-              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">pimienta negra</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">higo</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">pachulí</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Pimienta negra</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Higos de Capri</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Pachulí</span></div>
             </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Alexandra Carlin</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$6.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20decant%20de%20Light%20Blue%20pour%20homme%20capri%20in%20love" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Light%20Blue%20Capri%20in%20Love%20Pour%20Homme" target="_blank" rel="noopener">Consultar</a>
             </div>
-          </article-->
+          </article>
 
-          <!-- Card 9 -->
-          <!--article class="card" data-reveal data-category="diseñador decant">
-            <div class="card-top">
-              <img src="img/devotion.png" alt="Devotion pour homme EDP" style="height: 120px; margin: 0 auto; object-fit: contain;">
-            </div>
-            <span class="card-brand">Dolce & Gabbana</span>
-            <h3 class="card-name">Devotion pour homme EDP</h3>
-            <div class="card-meta"><span>Decant 5ml</span><span>Original</span></div>
+          <!-- P013 - Devotion Pour Homme -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P013">
+            <div class="card-top"><img src="img/dolce-gabbana/devotion-pour-homme-edp.png" alt="Devotion Pour Homme" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Dolce &amp; Gabbana</span>
+            <h3 class="card-name">Devotion Pour Homme</h3>
+            <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2025</span><span><img class="card-flag" src="https://flagcdn.com/it.svg" alt="Italia" title="Italia"></span></div>
             <div class="pyramid">
-              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">limón</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">café</span></div>
-              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">pachulí</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Limón confitado</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Panacota — flor de azahar del naranjo — ron</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla</span></div>
             </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Olivier Cresp</p>
             <div class="card-footer">
               <div><span class="price-label">Precio</span><span class="price">$10.000</span></div>
-              <a class="card-cta" href="https://wa.me/56964134084?text=Hola!%20Me%20interesa%20el%20decant%20de%20Devotion%20pour%20homme%20EDP" target="_blank" rel="noopener">Consultar</a>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Devotion%20Pour%20Homme" target="_blank" rel="noopener">Consultar</a>
             </div>
-          </article-->
+          </article>
+
+          <!-- P014 - Bottled Night -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P014">
+            <div class="card-top"><img src="img/hugo-boss/bottled-night.png" alt="Bottled Night" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Hugo Boss</span>
+            <h3 class="card-name">Bottled Night</h3>
+            <div class="card-meta"><span>Eau de Toilette</span><span>Diseñador</span><span>2010</span><span><img class="card-flag" src="https://flagcdn.com/de.svg" alt="Alemania" title="Alemania"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Lavanda — abedul</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Violeta</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Notas almendradas</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Peter Schmitt</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$7.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Bottled%20Night" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P015 - Bottled Infinite -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P015">
+            <div class="card-top"><img src="img/hugo-boss/bottled-infinite.png" alt="Bottled Infinite" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Hugo Boss</span>
+            <h3 class="card-name">Bottled Infinite</h3>
+            <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2019</span><span><img class="card-flag" src="https://flagcdn.com/de.svg" alt="Alemania" title="Alemania"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Manzana — canela — salvia — mandarina</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Lavanda — romero — pachulí</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Sándalo — olivo</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Ann Gottlieb</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$7.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Bottled%20Infinite" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P016 - Bottled Bold Citrus -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P016">
+            <div class="card-top"><img src="img/hugo-boss/bottled-bold-citrus.png" alt="Bottled Bold Citrus" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Hugo Boss</span>
+            <h3 class="card-name">Bottled Bold Citrus</h3>
+            <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2025</span><span><img class="card-flag" src="https://flagcdn.com/de.svg" alt="Alemania" title="Alemania"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Limón (lima ácida) — bergamota</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Resina de elemí — geranio bourbon</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vetiver — pachulí</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Honorine Blanc — Sophie Labbé</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$10.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Bottled%20Bold%20Citrus" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P017 - Bottled Beyond -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P017">
+            <div class="card-top"><img src="img/hugo-boss/bottled-beyond.png" alt="Bottled Beyond" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Hugo Boss</span>
+            <h3 class="card-name">Bottled Beyond</h3>
+            <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2025</span><span><img class="card-flag" src="https://flagcdn.com/de.svg" alt="Alemania" title="Alemania"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Jengibre</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Cuero</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Notas amaderadas</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Daphné Bugey — Frank Voelkl — Bruno Jovanovic</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$10.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Bottled%20Beyond" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P018 - Bottled Absolu -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P018">
+            <div class="card-top"><img src="img/hugo-boss/bottled-absolu.png" alt="Bottled Absolu" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Hugo Boss</span>
+            <h3 class="card-name">Bottled Absolu</h3>
+            <div class="card-meta"><span>Parfum</span><span>Diseñador</span><span>2024</span><span><img class="card-flag" src="https://flagcdn.com/de.svg" alt="Alemania" title="Alemania"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Incienso — cuero</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Mirra — pachulí</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Por confirmar</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Annick Menardo</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">$10.000</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Bottled%20Absolu" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P019 - Le Male Le Parfum -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P019">
+            <div class="card-top"><img src="img/jean-paul-gaultier/le-male-le-parfum.png" alt="Le Male Le Parfum" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Jean Paul Gaultier</span>
+            <h3 class="card-name">Le Male Le Parfum</h3>
+            <div class="card-meta"><span>Parfum</span><span>Diseñador</span><span>2020</span><span><img class="card-flag" src="https://flagcdn.com/fr.svg" alt="Francia" title="Francia"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cardamomo</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Lavanda — iris</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Vainilla — notas orientales — notas amaderadas</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Quentin Bisch — Natalie Gracia-Cetto</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">Por confirmar</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Le%20Male%20Le%20Parfum" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P020 - Le Male Elixir -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P020">
+            <div class="card-top"><img src="img/jean-paul-gaultier/le-male-elixir.png" alt="Le Male Elixir" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Jean Paul Gaultier</span>
+            <h3 class="card-name">Le Male Elixir</h3>
+            <div class="card-meta"><span>Parfum</span><span>Diseñador</span><span>2023</span><span><img class="card-flag" src="https://flagcdn.com/fr.svg" alt="Francia" title="Francia"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Lavanda — menta</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Vainilla — benjuí</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Miel — haba tonka — tabaco</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Quentin Bisch</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">Por confirmar</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Le%20Male%20Elixir" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P021 - Le Beau Le Parfum -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P021">
+            <div class="card-top"><img src="img/jean-paul-gaultier/le-beau-le-parfum.png" alt="Le Beau Le Parfum" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Jean Paul Gaultier</span>
+            <h3 class="card-name">Le Beau Le Parfum</h3>
+            <div class="card-meta"><span>Parfum</span><span>Diseñador</span><span>2022</span><span><img class="card-flag" src="https://flagcdn.com/fr.svg" alt="Francia" title="Francia"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Piña — iris — jengibre — ciprés</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Coco — notas amaderadas</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Haba tonka — sándalo — ámbar — ámbar gris</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Quentin Bisch</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">Por confirmar</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Le%20Beau%20Le%20Parfum" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P029 - Amore Caffé -->
+          <article class="card" data-reveal data-category="nicho" data-sku="P029">
+            <div class="card-top"><img src="img/mancera/amore-caffe.png" alt="Amore Caffé" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Mancera</span>
+            <h3 class="card-name">Amore Caffé</h3>
+            <div class="card-meta"><span>Por confirmar</span><span>Nicho</span><span>Por confirmar</span><span><img class="card-flag" src="https://flagcdn.com/fr.svg" alt="Francia" title="Francia"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Por confirmar</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Por confirmar</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Por confirmar</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Sin información</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">Por confirmar</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Amore%20Caff%C3%A9" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P030 - Cherry Smoke -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P030">
+            <div class="card-top"><img src="img/tom-ford/cherry-smoke.png" alt="Cherry Smoke" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Tom Ford</span>
+            <h3 class="card-name">Cherry Smoke</h3>
+            <div class="card-meta"><span>Eau de Parfum</span><span>Diseñador</span><span>2022</span><span><img class="card-flag" src="https://flagcdn.com/us.svg" alt="Estados Unidos" title="Estados Unidos"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Cereza ácida — azafrán</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Cuero — osmanto chino — oliva — chabacano</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Humo — notas amaderadas — cipriol</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Louise Turner</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">Por confirmar</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Cherry%20Smoke" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
+
+          <!-- P031 - Black Orchid -->
+          <article class="card" data-reveal data-category="disenador" data-sku="P031">
+            <div class="card-top"><img src="img/tom-ford/black-orchid.png" alt="Black Orchid" style="height: 120px; margin: 0 auto; object-fit: contain;"></div>
+            <span class="card-brand">Tom Ford</span>
+            <h3 class="card-name">Black Orchid</h3>
+            <div class="card-meta"><span>Parfum</span><span>Diseñador</span><span>2020</span><span><img class="card-flag" src="https://flagcdn.com/us.svg" alt="Estados Unidos" title="Estados Unidos"></span></div>
+            <div class="pyramid">
+              <div class="pyr-row"><span class="pyr-tag">Salida</span><span class="pyr-notes">Trufa — ciruela</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Corazón</span><span class="pyr-notes">Ron — ylang-ylang — orquídea negra</span></div>
+              <div class="pyr-row"><span class="pyr-tag">Fondo</span><span class="pyr-notes">Pachulí</span></div>
+            </div>
+            <span class="pyr-tag">PERFUMISTA</span><p class="card-perfumer">Pierre Negrin — Yann Vasnier</p>
+            <div class="card-footer">
+              <div><span class="price-label">Precio</span><span class="price">Por confirmar</span></div>
+              <a class="card-cta" href="https://wa.me/56964134084?text=Hola%21%20Me%20interesa%20el%20decant%20de%20Black%20Orchid" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
